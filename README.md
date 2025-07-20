@@ -1,102 +1,108 @@
-# JARVIS 🤖
+🧠 Jarvis - AI Voice Assistant using Python
+Jarvis is an advanced AI-powered virtual assistant built in Python. It uses speech recognition, text-to-speech, deep learning (NLP), and system automation to understand user commands and perform a wide range of tasks — just like a mini Jarvis from Iron Man.
 
-**Just A Rather Very Intelligent System**
+📌 Features
+✅ Understands voice and text commands
+✅ Speaks responses using TTS
+✅ Tells date and time
+✅ Opens/closes apps like Notepad, Chrome, VS Code
+✅ YouTube and Google search automation
+✅ Tells jokes and responds to appreciation
+✅ Intent detection using a trained neural network (chat_model.h5)
+✅ Context-aware responses from intents.json
+✅ Friendly conversational replies
+✅ Easily expandable with more commands
 
-[![GitHub stars](https://img.shields.io/github/stars/Kartos46/JARVIS?style=social)](https://github.com/Kartos46/JARVIS/stargazers)
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/licenses/MIT)
+🛠️ Technologies Used
+Python 3.x
 
-JARVIS is a voice-activated virtual assistant inspired by the iconic AI from the Iron Man universe. This project combines speech recognition, natural language processing, and automation to perform tasks and interact with users.
+TensorFlow / Keras (Deep Learning Model)
 
-**GitHub Repository**: [https://github.com/Kartos46/JARVIS.git](https://github.com/Kartos46/JARVIS.git)
+SpeechRecognition (Voice input)
 
----
+pyttsx3 (Text-to-speech)
 
-## Features ✨
+PyAutoGUI (GUI automation)
 
-- **Voice Commands**: Interact with JARVIS using natural speech.
-  
-- **AI-Powered Responses**: Leverage OpenAI for intelligent conversations.
-  
-- **Task Automation**: 
-  - Web searches
-  - Weather updates
-  - System control (e.g., shutdown, open apps)
-  - Reminder management
-    
-- **Multi-Platform Support**: Works on Windows, Linux, and macOS.
+NumPy
 
-- **Customizable Modules**: Easily extend functionality with plugins.
+scikit-learn
 
----
+Webbrowser, psutil, datetime, subprocess, os, pickle, json
 
-## Installation 🛠️
+📁 Project Structure
+bash
+Copy
+Edit
+Jarvis-AI/
+│
+├── intents.json              # Intent data for training and responses
+├── model_train.py            # Model training script (chat_model.h5, tokenizer.pkl, label_encoder.pkl)
+├── main.py                   # Main assistant script
+├── chat_model.h5             # Trained neural network model
+├── tokenizer.pkl             # Tokenizer for processing inputs
+├── label_encoder.pkl         # Label encoder for intents
+├── README.md                 # Project documentation
+└── requirements.txt          # Python package requirements
+🚀 How to Run
+Clone the Repository
 
-1. **Clone the repository**:
-   ```bash
- git clone https://github.com/Kartos46/JARVIS.git
-   
-   cd JARVIS
+bash
+Copy
+Edit
+git clone https://github.com/YourUsername/Jarvis-AI.git
+cd Jarvis-AI
+Install Dependencies
 
-2. Install dependencies:
-   pip install -r requirements.txt
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Train the Model (Optional if already trained)
 
-3.API Keys:
-   Create a .env file and add your API keys:
-   OPENAI_API_KEY=your_openai_key_here
-WOLFRAM_ALPHA_APP_ID=your_wolfram_id_here
+bash
+Copy
+Edit
+python model_train.py
+Start Jarvis
 
-___________________________________
+bash
+Copy
+Edit
+python main.py
+💬 Example Commands
+"What is the time?" → Returns current time
 
-* Usage 🚀
-1.Start JARVIS:
-     python jarvis.py
+"Tell me a joke" → Tells a random joke
 
-2.Try these commands:
-    ° "Jarvis, what's the weather in New York?"
+"Open Chrome" → Opens Chrome browser
 
-   ° "Search Wikipedia for quantum computing"
-   
-   ° "Set a reminder for 8 PM tomorrow"
+"Close Chrome" → Closes Chrome
 
-   ° "Tell me a joke"
+"Who made you?" → Tells the creator
 
-3.Wake Word:
-    ° Default wake word: "Jarvis"
-    ° Customize in config.json
+"Shut up" → Jarvis gives a funny reply
 
-___________________________________
+"Haha" → Laughs back
 
-* Configuration ⚙️
-  Edit config.json to:
-    ° Change the wake word
-    ° Adjust speech rate/pitch
-    ° Enable/disable modules
-    ° Set preferred temperature for AI responses
+"You are awesome" → Thanks you
 
-___________________________________
+🧪 Future Ideas
+Add weather report integration
 
-* Contributing 🤝
-   Contributions are welcome! Follow these steps:
-   1. Fork the repository
-   2. Create a feature branch (git checkout -b feature/AmazingFeature)
-   3. Commit changes (git commit -m 'Add AmazingFeature')
-   4. Push to branch (git push origin feature/AmazingFeature)
-   5. Open a Pull Request
+Email & WhatsApp automation
 
-___________________________________
+Music playback
 
-* License 📄
-    This project is licensed under the MIT License - see the LICENSE file for details.
+GUI using Tkinter or PyQt
 
-___________________________________
+Task reminders
 
-*Acknowledgments 🙏
-     ° Inspired by Tony Stark's JARVIS from Marvel
+👨‍💻 Developer
+Kartik Redij
+📧 kartikredij6@gmail.com
+📍 India
 
-   ° Built with:
-       SpeechRecognition
-        pyttsx3
-         OpenAI API
-          WolframAlpha
-          
+📜 License
+This project is open-source and free to use for learning and educational purposes.
+
